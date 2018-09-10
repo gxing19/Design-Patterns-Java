@@ -1,4 +1,4 @@
-package com.designpatterns.proxy.dynamic1;
+package com.designpatterns.proxy.jdc_dynamic1;
 
 public class MainMethod {
 

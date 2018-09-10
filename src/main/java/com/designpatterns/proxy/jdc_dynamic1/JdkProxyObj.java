@@ -1,4 +1,4 @@
-package com.designpatterns.proxy.dynamic1;
+package com.designpatterns.proxy.jdc_dynamic1;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

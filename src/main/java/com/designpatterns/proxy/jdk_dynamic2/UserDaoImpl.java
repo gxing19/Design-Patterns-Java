@@ -1,4 +1,4 @@
-package com.designpatterns.proxy.dynamic2;
+package com.designpatterns.proxy.jdk_dynamic2;
 
 /**
  * 目标对象
