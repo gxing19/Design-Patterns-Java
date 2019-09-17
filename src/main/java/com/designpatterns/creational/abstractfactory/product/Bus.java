@@ -6,18 +6,17 @@ import lombok.experimental.Accessors;
 
 /**
  * 具体产品
- * 顶配
+ * 高配
  */
 @Data
 @Accessors(chain = true)
 @ToString(callSuper = true)
-public class TopLevelCar extends Car {
+public class Bus extends Car {
 
-    private Integer price = 300000;
+    private Integer price = 280000;
 
     @Override
     public void show() {
-        System.out.println("这是一辆 顶配 的汽车");
+        System.out.println("这是一辆 高配 的汽车");
     }
-
 }

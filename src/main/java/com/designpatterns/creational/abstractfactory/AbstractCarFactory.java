@@ -1,18 +1,20 @@
 package com.designpatterns.creational.abstractfactory;
 
-import com.designpatterns.creational.abstractfactory.product.Car;
+import com.designpatterns.creational.abstractfactory.product.Bus;
+import com.designpatterns.creational.abstractfactory.product.Truck;
 
 /**
  * 产品工厂公共抽象
  */
-public abstract class AbstractCarFactory {
+public interface AbstractCarFactory {
 
     /**
      * 公共接口
+     *
      * @return
      */
-    public abstract Car createTopCar();
+    Bus createBus();
 
-    public abstract Car createSeniorCar();
+    Truck createTruck();
 
 }

@@ -1,17 +1,22 @@
 package com.designpatterns.creational.abstractfactory;
 
-import com.designpatterns.creational.factorymethod.SeniorCarFactory;
-import com.designpatterns.creational.factorymethod.TopLevelCarFactory;
+import com.designpatterns.creational.abstractfactory.product.Bus;
+import com.designpatterns.creational.abstractfactory.product.Truck;
 
 public class MainMethod {
 
     public static void main(String[] args) {
 
-        /*//通过具体工厂创建具体产品
-        TopLevelCarFactory topLevelCarFactory = new TopLevelCarFactory();
-        topLevelCarFactory.createCar().show();
+        AbstractCarFactory byd = new BYDCarFactory();
+        Bus bydBus = byd.createBus();
+        Truck bydTruck = byd.createTruck();
+        bydBus.show();
+        bydTruck.show();
 
-        SeniorCarFactory seniorCarFactory = new SeniorCarFactory();
-        seniorCarFactory.createCar().show();*/
+        AbstractCarFactory fute = new FuTeCarFactory();
+        Bus futeBus = byd.createBus();
+        Truck futeTruck = byd.createTruck();
+        futeBus.show();
+        futeTruck.show();
     }
 }
