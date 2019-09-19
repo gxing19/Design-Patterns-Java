@@ -1,7 +1,9 @@
 package com.designpatterns.creational.abstractfactory;
 
-import com.designpatterns.creational.abstractfactory.product.Bus;
-import com.designpatterns.creational.abstractfactory.product.Truck;
+import com.designpatterns.creational.abstractfactory.product.BYDBus;
+import com.designpatterns.creational.abstractfactory.product.BYDTruck;
+import com.designpatterns.creational.abstractfactory.product.IBus;
+import com.designpatterns.creational.abstractfactory.product.ITruck;
 
 /**
  * 比亚迪汽车工厂
@@ -9,14 +11,12 @@ import com.designpatterns.creational.abstractfactory.product.Truck;
 public class BYDCarFactory implements AbstractCarFactory {
 
     @Override
-    public Bus createBus() {
-        System.out.println("比亚迪工厂--> 生产巴士......");
-        return new Bus();
+    public IBus createBus() {
+        return new BYDBus();
     }
 
     @Override
-    public Truck createTruck() {
-        System.out.println("比亚迪工厂--> 生成卡车......");
-        return new Truck();
+    public ITruck createTruck() {
+        return new BYDTruck();
     }
 }

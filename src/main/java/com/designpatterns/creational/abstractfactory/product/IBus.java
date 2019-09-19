@@ -1,6 +1,8 @@
 package com.designpatterns.creational.abstractfactory.product;
 
-public interface Car {
-
+/**
+ * 产品抽象
+ */
+public interface IBus extends Car {
     void show();
 }

@@ -1,7 +1,9 @@
 package com.designpatterns.creational.abstractfactory;
 
-import com.designpatterns.creational.abstractfactory.product.Bus;
-import com.designpatterns.creational.abstractfactory.product.Truck;
+import com.designpatterns.creational.abstractfactory.product.FUTEBus;
+import com.designpatterns.creational.abstractfactory.product.FUTETruck;
+import com.designpatterns.creational.abstractfactory.product.IBus;
+import com.designpatterns.creational.abstractfactory.product.ITruck;
 
 /**
  * 福特汽车工厂
@@ -9,14 +11,12 @@ import com.designpatterns.creational.abstractfactory.product.Truck;
 public class FuTeCarFactory implements AbstractCarFactory {
 
     @Override
-    public Bus createBus() {
-        System.out.println("福特工厂--> 生产巴士......");
-        return new Bus();
+    public IBus createBus() {
+        return new FUTEBus();
     }
 
     @Override
-    public Truck createTruck() {
-        System.out.println("福特工厂--> 生成卡车......");
-        return new Truck();
+    public ITruck createTruck() {
+        return new FUTETruck();
     }
 }
