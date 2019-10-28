@@ -10,12 +10,14 @@ public class MainMethod {
         AbstractCarFactory byd = new BYDCarFactory();
         IBus bydBus = byd.createBus();
         ITruck bydTruck = byd.createTruck();
+
         bydBus.show();
         bydTruck.show();
 
         AbstractCarFactory fute = new FuTeCarFactory();
         IBus futeBus = byd.createBus();
-        ITruck futeTruck = byd.createTruck();
+        ITruck futeTruck = fute.createTruck();
+
         futeBus.show();
         futeTruck.show();
     }
