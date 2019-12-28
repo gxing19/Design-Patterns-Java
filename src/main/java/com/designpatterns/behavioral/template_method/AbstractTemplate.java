@@ -6,7 +6,7 @@ public abstract class AbstractTemplate {
      * 模板方法的声明和实现
      * 定义轮廓和骨架(调用方法顺序，即逻辑步骤)
      */
-    public void TemplateMethod() {
+    public void templateMethod() {
         doOperation1();
 
         doOperation2();
