@@ -5,9 +5,11 @@ Design patterns implemented in Java(设计模式之Java实现) 。
 
 此系列是个人对设计模式的理解 和 Java 实现 Demo 的汇总，同时也参考了大量网上的资料或博文，在此表示感谢。
 
-[设计模式系列文章](http://www.gxitsky.com/categories/设计模式/)
+Blog：http://www.gxitsky.com/
+设计模式系列文章：http://www.gxitsky.com/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/
 
-Gitee仓库：https://gitee.com/gxing19/Design-Patterns-Java
+Github：https://github.com/gxing19/Design-Patterns-Java
+Gitee：https://gitee.com/gxing19/Design-Patterns-Java
 
 # 设计模式简介
 
