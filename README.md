@@ -1,14 +1,16 @@
 # Java-Design-Patterns
 Design patterns implemented in Java(设计模式之Java实现) 。
 
+[系列文章地址](http://www.gxitsky.com/categories/设计模式/):http://www.gxitsky.com/categories/设计模式/
+
 要理解 设计模式，前提是必须深入理解面向对象的三个基本特征：封装，继承、多态。有的把 **抽象** 也作为面向对象的基本特征，抽象严格来讲应归属于 **继承**。另外就是还需要对 `高内聚、低耦合` 略有体会。
 
 此系列是个人对设计模式的理解 和 Java 实现 Demo 的汇总，同时也参考了大量网上的资料或博文，在此表示感谢。
 
 Blog：http://www.gxitsky.com/
-设计模式系列文章：http://www.gxitsky.com/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/
 
 Github：https://github.com/gxing19/Design-Patterns-Java
+
 Gitee：https://gitee.com/gxing19/Design-Patterns-Java
 
 # 设计模式简介
