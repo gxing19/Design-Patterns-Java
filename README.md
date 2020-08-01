@@ -7,6 +7,8 @@ Design patterns implemented in Java(设计模式之Java实现) 。
 
 [设计模式系列文章](http://www.gxitsky.com/categories/设计模式/)
 
+Gitee仓库：https://gitee.com/gxing19/Design-Patterns-Java
+
 # 设计模式简介
 
 GOF 四人帮出的书(Design Patterns - Elements of Reusable Object-Oriented Software（中文译名：设计模式 - 可复用的面向对象软件元素))中提到的设计模式总共有 23 种设计模式。
@@ -176,7 +178,7 @@ GOF 四人帮出的书(Design Patterns - Elements of Reusable Object-Oriented So
 9. 访问者模式（Visitor）
 
    在不改变集合元素的前提下，为一个集合中的每个元素提供多种访问方式，即每个元素有多个访问者对象访问。
-
+  
 # 参考引用
 
 1. [软件设计模式](http://c.biancheng.net/view/1317.html)
