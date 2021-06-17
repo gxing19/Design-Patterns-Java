@@ -8,7 +8,10 @@ package com.designpatterns.structural.facade;
 public class Client {
 
     public static void main(String[] args) {
-        Facade facade = new Facade();
-        facade.operation();
+        AbstractFacade facade1 = new Facade();
+        facade1.operation1();
+
+        AbstractFacade facade2 = new Facade2();
+        facade2.operation2();
     }
 }
