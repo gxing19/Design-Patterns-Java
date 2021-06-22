@@ -13,11 +13,12 @@ public class ConcreteColleagueB extends Colleague {
 
     @Override
     void receive() {
-
+        System.out.println("-----> B Receive");
     }
 
     @Override
     void send() {
-        System.out.println("-----> Send B");
+        System.out.println("-----> B Send");
+        mediator.relay(this);
     }
 }

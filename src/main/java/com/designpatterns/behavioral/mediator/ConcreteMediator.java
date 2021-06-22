@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class ConcreteMediator extends Mediator {
 
-    private List<Colleague> colleagueList = new ArrayList<>();
+    protected List<Colleague> colleagueList = new ArrayList<>();
 
     @Override
     public void register(Colleague colleague) {
@@ -22,7 +22,8 @@ public class ConcreteMediator extends Mediator {
     @Override
     public void relay(Colleague colleague) {
         for (Colleague c : colleagueList) {
-            if (c.equals(colleague)) {
+            if (!c.equals(colleague)) {
+                // 这种方式有点向广播
                 c.receive();
             }
         }
