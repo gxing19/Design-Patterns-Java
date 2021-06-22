@@ -19,10 +19,30 @@ public class ConcreteMediator extends Mediator {
         }
     }
 
+    /**
+     * 广播到所有同事
+     *
+     * @param colleague
+     */
     @Override
     public void relay(Colleague colleague) {
         for (Colleague c : colleagueList) {
             if (!c.equals(colleague)) {
+                // 这种方式有点向广播
+                c.receive();
+            }
+        }
+    }
+
+    /**
+     * 转发到指定同事,同事件联系由中介者维护
+     *
+     * @param colleague
+     */
+    @Override
+    void relayToB(Colleague colleague) {
+        for (Colleague c : colleagueList) {
+            if (c instanceof ConcreteColleagueB) {
                 // 这种方式有点向广播
                 c.receive();
             }

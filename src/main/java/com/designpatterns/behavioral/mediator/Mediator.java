@@ -10,4 +10,6 @@ public abstract class Mediator {
     abstract void register(Colleague colleague);
 
     abstract void relay(Colleague colleague);
+
+    abstract void relayToB(Colleague colleague);
 }

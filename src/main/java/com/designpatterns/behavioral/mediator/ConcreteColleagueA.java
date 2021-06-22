@@ -19,6 +19,7 @@ public class ConcreteColleagueA extends Colleague {
     @Override
     void send() {
         System.out.println("-----> A Send");
-        mediator.relay(this);
+//        mediator.relay(this);
+        mediator.relayToB(this);
     }
 }
