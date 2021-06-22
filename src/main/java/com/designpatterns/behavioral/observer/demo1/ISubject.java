@@ -6,7 +6,7 @@ public interface ISubject {
 
     void remove(IObserver observer);
 
-    void notifyObserver();
+    void someChange(Object String);
 
-
+//    void notifyObserver();
 }

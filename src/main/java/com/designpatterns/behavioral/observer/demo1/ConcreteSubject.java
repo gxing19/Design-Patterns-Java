@@ -19,11 +19,15 @@ public class ConcreteSubject implements ISubject {
     }
 
     @Override
-    public void notifyObserver() {
+    public void someChange(Object String) {
+        System.out.println("-----> some change:" + String);
+        notifyObserver(String);
+    }
 
+    private void notifyObserver(Object String) {
         Enumeration enumeration = observers();
         while (enumeration.hasMoreElements()){
-            ((IObserver)enumeration.nextElement()).update();
+            ((IObserver)enumeration.nextElement()).update(String);
         }
 
     }
