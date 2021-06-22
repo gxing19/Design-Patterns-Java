@@ -9,14 +9,14 @@ public class Client {
 
     public static void main(String[] args) {
         Mediator mediator = new ConcreteMediator();
-        Colleague c1 = new ConcreteColleagueA(mediator);
-        Colleague c2 = new ConcreteColleagueB(mediator);
-        mediator.register(c1);
-        mediator.register(c2);
+        Colleague colleagueA = new ConcreteColleagueA(mediator);
+        Colleague colleagueB = new ConcreteColleagueB(mediator);
+        mediator.register(colleagueA);
+        mediator.register(colleagueB);
 
-        c1.send();
+        colleagueA.send();
         System.out.println("--------------------------");
-        c2.send();
+        colleagueB.send();
 
     }
 }

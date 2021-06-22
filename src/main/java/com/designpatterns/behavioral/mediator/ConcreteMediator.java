@@ -35,7 +35,7 @@ public class ConcreteMediator extends Mediator {
     }
 
     /**
-     * 转发到指定同事,同事件联系由中介者维护
+     * 转发到指定同事,同事间联系由中介者维护
      *
      * @param colleague
      */
