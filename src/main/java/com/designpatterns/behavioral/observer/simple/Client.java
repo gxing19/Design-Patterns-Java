@@ -1,4 +1,4 @@
-package com.designpatterns.behavioral.observer.demo2;
+package com.designpatterns.behavioral.observer.simple;
 
 public class Client {
 

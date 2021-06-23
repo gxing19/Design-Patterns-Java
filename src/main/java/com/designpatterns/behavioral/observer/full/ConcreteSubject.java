@@ -1,11 +1,11 @@
-package com.designpatterns.behavioral.observer.demo1;
+package com.designpatterns.behavioral.observer.full;
 
 import java.util.Enumeration;
 import java.util.Vector;
 
 public class ConcreteSubject implements ISubject {
 
-    private Vector vector = new Vector();
+    private Vector<IObserver> vector = new Vector<>();
 
     @Override
     public void add(IObserver observer) {
@@ -24,7 +24,8 @@ public class ConcreteSubject implements ISubject {
         notifyObserver(String);
     }
 
-    private void notifyObserver(Object String) {
+    @Override
+    public void notifyObserver(Object String) {
         Enumeration enumeration = observers();
         while (enumeration.hasMoreElements()){
             ((IObserver)enumeration.nextElement()).update(String);

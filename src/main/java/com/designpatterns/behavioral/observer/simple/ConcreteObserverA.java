@@ -1,4 +1,4 @@
-package com.designpatterns.behavioral.observer.demo2;
+package com.designpatterns.behavioral.observer.simple;
 
 /**
  * 具体观察者

@@ -1,4 +1,4 @@
-package com.designpatterns.behavioral.observer.demo2;
+package com.designpatterns.behavioral.observer.single;
 
 
 import java.util.ArrayList;
@@ -9,9 +9,19 @@ import java.util.List;
  */
 public class Subject {
 
+    private static Subject subject = new Subject();
+
     // 维护观察者容器
     private List<AbstractObserver> observerList = new ArrayList<>();
     private Object content;
+
+    private Subject() {
+    }
+
+    public static Subject getInstance() {
+        return subject;
+    }
+
 
     public Object getContent() {
         return content;
