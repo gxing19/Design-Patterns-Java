@@ -1,4 +1,4 @@
-package com.designpatterns.structural.facade;
+package com.designpatterns.structural.facade.full;
 
 /**
  * @author gxing

@@ -1,4 +1,4 @@
-package com.designpatterns.structural.abstractfacade;
+package com.designpatterns.structural.facade.session;
 
 /**
  * @author gxing

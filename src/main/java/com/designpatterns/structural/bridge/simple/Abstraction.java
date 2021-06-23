@@ -7,10 +7,10 @@ package com.designpatterns.structural.bridge.simple;
  */
 public abstract class Abstraction {
 
-    protected Implementor implementor;
+    protected ConcreteImplementor concreteImplementor;
 
-    public Abstraction(Implementor implementor) {
-        this.implementor = implementor;
+    public Abstraction(ConcreteImplementor concreteImplementor) {
+        this.concreteImplementor = concreteImplementor;
     }
 
     abstract void operation();

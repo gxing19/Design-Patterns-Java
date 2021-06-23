@@ -8,8 +8,8 @@ package com.designpatterns.structural.bridge.simple;
 public class Client {
 
     public static void main(String[] args) {
-        Implementor implementor = new Implementor();
-        Abstraction abstraction = new RefinedAbstraction(implementor);
+        ConcreteImplementor concreteImplementor = new ConcreteImplementor();
+        Abstraction abstraction = new RefinedAbstraction(concreteImplementor);
         abstraction.operation();
     }
 }

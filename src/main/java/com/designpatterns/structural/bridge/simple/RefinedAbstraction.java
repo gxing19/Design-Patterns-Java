@@ -7,13 +7,13 @@ package com.designpatterns.structural.bridge.simple;
  */
 public class RefinedAbstraction extends Abstraction {
 
-    public RefinedAbstraction(Implementor implementor) {
-        super(implementor);
+    public RefinedAbstraction(ConcreteImplementor concreteImplementor) {
+        super(concreteImplementor);
     }
 
     @Override
     public void operation() {
         System.out.println("-----> 访问扩展抽象化");
-        super.implementor.operationImpl();
+        super.concreteImplementor.operationImpl();
     }
 }

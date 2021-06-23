@@ -1,4 +1,4 @@
-package com.designpatterns.structural.bridge;
+package com.designpatterns.structural.bridge.full;
 
 /**
  * @author gxing

@@ -5,12 +5,12 @@ package com.designpatterns.behavioral.mediator.simple;
  * @desc 具体同事类
  * @date 2021/6/21
  */
-public class SimpleConcreteColleagueB extends SimpleColleague {
+public class ConcreteColleagueB extends Colleague {
 
 //    private static SimpleMediator mediator;
 
-    public SimpleConcreteColleagueB() {
-        SimpleMediator mediator = SimpleMediator.getInstance();
+    public ConcreteColleagueB() {
+        Mediator mediator = Mediator.getInstance();
         mediator.register(this);
     }
 
@@ -22,7 +22,7 @@ public class SimpleConcreteColleagueB extends SimpleColleague {
     @Override
     void send() {
         System.out.println("-----> B Send");
-        SimpleMediator mediator = SimpleMediator.getInstance();
+        Mediator mediator = Mediator.getInstance();
         mediator.relay(this);
     }
 }

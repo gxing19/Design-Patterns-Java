@@ -8,12 +8,12 @@ package com.designpatterns.behavioral.mediator.simple;
 public class Client {
 
     public static void main(String[] args) {
-        SimpleColleague simpleColleagueA = new SimpleConcreteColleagueA();
-        SimpleColleague simpleColleagueB = new SimpleConcreteColleagueB();
+        Colleague colleagueA = new ConcreteColleagueA();
+        Colleague colleagueB = new ConcreteColleagueB();
 
-        simpleColleagueA.send();
+        colleagueA.send();
         System.out.println("--------------------------");
-        simpleColleagueB.send();
+        colleagueB.send();
 
     }
 }
