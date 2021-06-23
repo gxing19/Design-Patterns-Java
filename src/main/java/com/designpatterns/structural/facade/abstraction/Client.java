@@ -1,4 +1,4 @@
-package com.designpatterns.structural.facade.full;
+package com.designpatterns.structural.facade.abstraction;
 
 /**
  * @author gxing
@@ -8,7 +8,7 @@ package com.designpatterns.structural.facade.full;
 public class Client {
 
     public static void main(String[] args) {
-        Facade facade = new Facade();
-        facade.operation();
+        AbstractFacade facade = new SubFacade();
+        facade.operation2();
     }
 }
