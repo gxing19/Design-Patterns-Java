@@ -28,22 +28,22 @@ public class FlyweightFactory {
                 KeyAnnotation annotation = clazz.getAnnotation(KeyAnnotation.class);
                 String key1 = annotation.key();
                 if (key.equals(key1)) {
-                    Constructor<? extends Flyweight> constructor = clazz.getConstructor(String.class);
-                    flyweight = constructor.newInstance(key);
+                    Constructor<? extends Flyweight> constructor = clazz.getConstructor();
+                    flyweight = constructor.newInstance();
                     flyweightMap.put(key, flyweight);
                 }
             }
 
 
 //            Class<?>[] interfaces = Flyweight.class.getDeclaredClasses();
-            /*for (int i = 0; i < clazzs.size(); i++) {
-                Class<?> aClass = clazzs[i];
-                KeyAnnotation annotation = aClass.getAnnotation(KeyAnnotation.class);
-                String key1 = annotation.key();
-                if (key.equals(key1)) {
-                    flyweightMap.put(key, (Flyweight) aClass.newInstance());
-                }
-            }*/
+//            for (int i = 0; i < clazzs.size(); i++) {
+//                Class<?> aClass = clazzs[i];
+//                KeyAnnotation annotation = aClass.getAnnotation(KeyAnnotation.class);
+//                String key1 = annotation.key();
+//                if (key.equals(key1)) {
+//                    flyweightMap.put(key, (Flyweight) aClass.newInstance());
+//                }
+//            }
             return flyweight;
         }
     }

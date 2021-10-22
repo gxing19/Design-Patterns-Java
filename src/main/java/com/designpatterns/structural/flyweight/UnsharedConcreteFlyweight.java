@@ -7,17 +7,17 @@ package com.designpatterns.structural.flyweight;
  */
 public class UnsharedConcreteFlyweight {
 
-    private String info;
+    private String outState;
 
-    public UnsharedConcreteFlyweight(String info) {
-        this.info = info;
+    public UnsharedConcreteFlyweight(String outState) {
+        this.outState = outState;
     }
 
-    public String getInfo() {
-        return info;
+    public String getOutState() {
+        return outState;
     }
 
-    public void setInfo(String info) {
-        this.info = info;
+    public void setOutState(String outState) {
+        this.outState = outState;
     }
 }

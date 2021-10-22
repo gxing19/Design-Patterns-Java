@@ -8,14 +8,11 @@ package com.designpatterns.structural.flyweight;
 @KeyAnnotation(key = "keyA")
 public class ConcreteFlyweightA implements Flyweight {
 
-    private String key;
-
-    public ConcreteFlyweightA(String key) {
-        this.key = key;
-    }
+    // 内部状态
+    private static String innerState = "infoA";
 
     @Override
     public void operation(UnsharedConcreteFlyweight outState) {
-        System.out.println("ConcreteFlyweightA:" + outState.getInfo());
+        System.out.println("ConcreteFlyweightA:" + outState.getOutState());
     }
 }
