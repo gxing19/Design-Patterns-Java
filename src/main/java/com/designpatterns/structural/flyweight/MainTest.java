@@ -10,8 +10,13 @@ import java.lang.reflect.InvocationTargetException;
 public class MainTest {
 
     public static void main(String[] args) throws InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
-        Flyweight flyweight = FlyweightFactory.getFlyweight("keyA");
+//        Flyweight flyweight = FlyweightFactory.getFlyweight("keyA");
+//        flyweight.operation(new UnsharedConcreteFlyweight("Hello"));
+//        System.out.println();
+
+        FlyweightFactorySingleton factory = FlyweightFactorySingleton.getFactory();
+        Flyweight flyweight = factory.getFlyweight("keyA");
         flyweight.operation(new UnsharedConcreteFlyweight("Hello"));
-        System.out.println();
+
     }
 }

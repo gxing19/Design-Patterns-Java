@@ -1,16 +1,16 @@
 package com.designpatterns.structural.proxy.static_proxy2;
 
 /**
- * 代理对象
+ * 代理实现
  *
  * @author Rocky
  */
 public class UserDaoProxyImpl implements UserDao {
 
-    private UserDaoImpl userDaoImpl;
+    private UserDao userDao;
 
-    public UserDaoProxyImpl(UserDaoImpl userDaoImpl) {
-        this.userDaoImpl = userDaoImpl;
+    public UserDaoProxyImpl(UserDao userDao) {
+        this.userDao = userDao;
     }
 
     /**
@@ -19,7 +19,7 @@ public class UserDaoProxyImpl implements UserDao {
     @Override
     public void save() {
         System.out.println("代理增强：  开始保存。。。。");
-        userDaoImpl.save();
+        userDao.save();
         System.out.println("代理增强：  保存结束。。。。");
     }
 
