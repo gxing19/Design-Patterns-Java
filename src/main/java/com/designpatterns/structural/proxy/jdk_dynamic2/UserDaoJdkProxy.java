@@ -13,21 +13,20 @@ import java.lang.reflect.Proxy;
  * args：代表调用目标方法时传入的实参
  */
 
-public class ProxyClass implements InvocationHandler {
+public class UserDaoJdkProxy<T> implements InvocationHandler {
 
     //目标对象，接口实现类
-    private Object obj;
+    private T target;
 
-    public ProxyClass(Object obj) {
-        this.obj = obj;
+    public UserDaoJdkProxy(T target) {
+        this.target = target;
     }
 
     //把目标实现类传进有参构造
-    public Object getProxyObject(Object obj) {
+    public Object getProxyObject() {
         //返回代理对象，绑定的是个接口
-        return Proxy.newProxyInstance(obj.getClass().getClassLoader(),
-                obj.getClass().getInterfaces(),
-                this);
+        return Proxy.newProxyInstance(target.getClass().getClassLoader(),
+                target.getClass().getInterfaces(), this);
     }
 
     /**
@@ -37,7 +36,7 @@ public class ProxyClass implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("事务开启。。。。");
-        Object result = method.invoke(obj, args);
+        Object result = method.invoke(target, args);
         System.out.println("事务结束。。。。");
         return result;
     }

@@ -7,5 +7,5 @@ package com.designpatterns.structural.proxy.jdk_dynamic2;
  */
 public interface UserDao {
 	
-	void save();
+	void save(Long id, String name);
 }

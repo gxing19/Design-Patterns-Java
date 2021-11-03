@@ -8,6 +8,7 @@ import java.lang.reflect.Method;
  */
 public class CustomizeInvocationHandler implements InvocationHandler {
 
+    // 目标对象,即被代理对象
     private Object target;
 
     public CustomizeInvocationHandler(Object target) {
@@ -16,10 +17,11 @@ public class CustomizeInvocationHandler implements InvocationHandler {
 
     /**
      * 重写invoke()方法
-     * @param proxy
-     * @param method
-     * @param args
-     * @return
+     *
+     * @param proxy  代理对象
+     * @param method 被代理对象的方法
+     * @param args   被代理对象的方法入参
+     * @return Object
      * @throws Throwable
      */
     @Override
