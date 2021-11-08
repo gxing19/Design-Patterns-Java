@@ -6,11 +6,11 @@ import net.sf.cglib.proxy.MethodProxy;
 
 import java.lang.reflect.Method;
 
-public class CglibInterceptor implements MethodInterceptor {
+public class CglibProxyInterceptor implements MethodInterceptor {
     //被代理的目标类
     private Object obj;
 
-    public CglibInterceptor(Object obj) {
+    public CglibProxyInterceptor(Object obj) {
         this.obj = obj;
     }
 

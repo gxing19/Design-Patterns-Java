@@ -4,7 +4,7 @@ package com.designpatterns.structural.proxy.cglib_dynamic1;
  * 不需要实现接口的业务类
  *
  */
-public class UserService {
+public class UserServiceImpl {
 	
 	public void queryInfo(int id) {
 		System.out.println("根据ID查询信息。。。 " + id);
