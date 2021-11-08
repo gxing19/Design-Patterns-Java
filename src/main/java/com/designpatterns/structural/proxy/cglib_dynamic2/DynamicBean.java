@@ -10,7 +10,6 @@ import java.util.Set;
 public class DynamicBean {
 
     private Object obj = null;
-
     private BeanMap beanMap = null;
 
     public DynamicBean() {
@@ -22,6 +21,11 @@ public class DynamicBean {
         //map转对象
         this.obj = generateBean(propertyMap);
         this.beanMap = BeanMap.create(this.obj);
+        Set keySet = propertyMap.keySet();
+        for (Iterator iterator = keySet.iterator(); iterator.hasNext(); ) {
+            String key = (String) iterator.next();
+            beanMap.put(key, propertyMap.get(key));
+        }
     }
 
     /**
@@ -39,7 +43,6 @@ public class DynamicBean {
             generator.addProperty(key, propertyMap.get(key).getClass());
         }
         Object object = generator.create();
-
         return object;
     }
 

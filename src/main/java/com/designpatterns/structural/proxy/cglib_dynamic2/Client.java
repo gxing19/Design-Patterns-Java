@@ -5,11 +5,11 @@ import com.alibaba.fastjson.TypeReference;
 
 import java.util.Map;
 
-public class MainMethod {
+public class Client {
 
     public static void main(String[] args) {
 
-        String jsonData = "{id:100,list:[{a:1},{a:2}]";
+        String jsonData = "{id:100,list:[{a:1},{b:2}]";
         //json字符串转map
         Map<String, Object> map = JSON.parseObject(jsonData, new TypeReference<Map<String, Object>>() {
         });

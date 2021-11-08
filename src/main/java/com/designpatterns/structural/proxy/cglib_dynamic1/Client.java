@@ -1,6 +1,6 @@
 package com.designpatterns.structural.proxy.cglib_dynamic1;
 
-public class MainMethod {
+public class Client {
 
     public static void main(String[] args) {
         //创建目标类对象
