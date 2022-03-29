@@ -3,6 +3,11 @@ package com.gxitsky.behavioral.chain_responsibility;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @desc 请假单
+ * @author gxing
+ * @date 2022/3/29 16:43
+ */
 public class TakeLeave {
 
     private String name;
